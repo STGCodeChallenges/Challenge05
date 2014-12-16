@@ -10,12 +10,9 @@
 	<div class="results">
 		<?php
 			$stringtoparse = $_POST['stringtoparse'];
-			//$stringtoparse = "three hundred and sixty eight billion seven hundred forty eight million two hundred seventeen thousand seven hundred sixty three";
-			//$stringtoparse = "seven hundred fifteen";
-			//echo($stringtoparse . "<br />");
-			echo("The number: <br />" .  $stringtoparse . "<br /> in numeric format is: <br />");
+			echo("<p>The number: <br /><br /><em>" .  ucwords($stringtoparse) . "</em><br /><br /> in numeric format is: <br /><br /><strong>");
 			echo(number_format(text2number($stringtoparse)));
-			//echo(array_sum(text2number($stringtoparse)));
+			echo("</strong></p>");
 			
 		?>
 	</div>

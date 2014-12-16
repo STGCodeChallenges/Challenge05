@@ -10,9 +10,7 @@ function text2number($input){
 			$dividedtext[$x] = "";
 			}
 		}
-		
-	//Two million one hundred twenty five thousand one hundred fifty five
-	//seven hundred forty eight million two hundred seventeen thousand seven hundred sixty three		
+			
 	$dividedtext = array_values(array_filter($dividedtext));		
 	$numericarray = array();
 	for($y=0;$y<count($dividedtext);$y++){
@@ -127,7 +125,7 @@ function text2number($input){
 		}
 	
 	$numericarray = array_reverse(array_values(array_filter($numericarray)));
-	//print_r($numericarray);
+
 	$numericarray[] = "";
 	$m=0;
 	$hundreds=array();
@@ -174,11 +172,6 @@ function text2number($input){
 			} 
 			if($m==count($numericarray)-2){$trillions[]=$numericarray[$m];}
 	}
-		
-	//echo(array_sum($billions)."<br />");	
-	//echo(array_sum($millions)."<br />");		
-	//echo(array_sum($thousands)."<br />");		
-	//echo(array_sum($hundreds)."<br />");
 	
 	$finalnumber = array_sum($trillions)*1000000000000 + array_sum($billions)*1000000000 + array_sum($millions) * 1000000 + array_sum($thousands) * 1000 + array_sum($hundreds);
 	return $finalnumber;
