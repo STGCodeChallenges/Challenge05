@@ -1,0 +1,9 @@
+C:\Users\stguser\AppData\Local\Temporary Projects\STGCodeChallenge141215\obj\x86\Debug\STGCodeChallenge141215.Form1.resources
+C:\Users\stguser\AppData\Local\Temporary Projects\STGCodeChallenge141215\obj\x86\Debug\STGCodeChallenge141215.Properties.Resources.resources
+C:\Users\stguser\AppData\Local\Temporary Projects\STGCodeChallenge141215\obj\x86\Debug\STGCodeChallenge141215.csproj.GenerateResource.Cache
+C:\Users\stguser\AppData\Local\Temporary Projects\STGCodeChallenge141215\bin\Debug\STGCodeChallenge141215.exe
+C:\Users\stguser\AppData\Local\Temporary Projects\STGCodeChallenge141215\bin\Debug\STGCodeChallenge141215.pdb
+C:\Users\stguser\AppData\Local\Temporary Projects\STGCodeChallenge141215\obj\x86\Debug\STGCodeChallenge141215.exe
+C:\Users\stguser\AppData\Local\Temporary Projects\STGCodeChallenge141215\obj\x86\Debug\STGCodeChallenge141215.pdb
+C:\Users\stguser\Documents\GitHub\Challenge05\AaronLambert\STGCodeChallenge141215\obj\x86\Debug\STGCodeChallenge141215.exe
+C:\Users\stguser\Documents\GitHub\Challenge05\AaronLambert\STGCodeChallenge141215\obj\x86\Debug\STGCodeChallenge141215.pdb
