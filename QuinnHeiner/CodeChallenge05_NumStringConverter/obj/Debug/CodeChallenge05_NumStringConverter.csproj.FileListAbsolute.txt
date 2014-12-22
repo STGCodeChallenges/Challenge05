@@ -1,0 +1,12 @@
+C:\Users\qheiner\Dropbox\Work\STG\Training\STGCodeChallenges\CodeChallenge05_NumStringConverter\bin\Debug\CodeChallenge05_NumStringConverter.exe.config
+C:\Users\qheiner\Dropbox\Work\STG\Training\STGCodeChallenges\CodeChallenge05_NumStringConverter\bin\Debug\CodeChallenge05_NumStringConverter.exe
+C:\Users\qheiner\Dropbox\Work\STG\Training\STGCodeChallenges\CodeChallenge05_NumStringConverter\bin\Debug\CodeChallenge05_NumStringConverter.pdb
+C:\Users\qheiner\Dropbox\Work\STG\Training\STGCodeChallenges\CodeChallenge05_NumStringConverter\obj\Debug\CodeChallenge05_NumStringConverter.csprojResolveAssemblyReference.cache
+C:\Users\qheiner\Dropbox\Work\STG\Training\STGCodeChallenges\CodeChallenge05_NumStringConverter\obj\Debug\CodeChallenge05_NumStringConverter.exe
+C:\Users\qheiner\Dropbox\Work\STG\Training\STGCodeChallenges\CodeChallenge05_NumStringConverter\obj\Debug\CodeChallenge05_NumStringConverter.pdb
+C:\Users\Quinn Heiner\Dropbox\Work\STG\Training\STGCodeChallenges\CodeChallenge05_NumStringConverter\bin\Debug\CodeChallenge05_NumStringConverter.exe.config
+C:\Users\Quinn Heiner\Dropbox\Work\STG\Training\STGCodeChallenges\CodeChallenge05_NumStringConverter\obj\Debug\CodeChallenge05_NumStringConverter.exe
+C:\Users\Quinn Heiner\Dropbox\Work\STG\Training\STGCodeChallenges\CodeChallenge05_NumStringConverter\obj\Debug\CodeChallenge05_NumStringConverter.pdb
+C:\Users\Quinn Heiner\Dropbox\Work\STG\Training\STGCodeChallenges\CodeChallenge05_NumStringConverter\bin\Debug\CodeChallenge05_NumStringConverter.exe
+C:\Users\Quinn Heiner\Dropbox\Work\STG\Training\STGCodeChallenges\CodeChallenge05_NumStringConverter\bin\Debug\CodeChallenge05_NumStringConverter.pdb
+C:\Users\Quinn Heiner\Dropbox\Work\STG\Training\STGCodeChallenges\CodeChallenge05_NumStringConverter\obj\Debug\CodeChallenge05_NumStringConverter.csprojResolveAssemblyReference.cache
