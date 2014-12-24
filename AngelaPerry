@@ -1,0 +1,77 @@
+<?php
+	class NumToString
+	{
+		//Define maps to convert string to number
+		private $nummap = array (
+			"a" => 1,
+			"one" => 1,
+			"two" => 2,
+			"three" => 3,
+			"four" => 4,
+			"five" => 5,
+			"six" => 6,
+			"seven" => 7,
+			"eight" => 8,
+			"nine" => 9,
+			"ten" => 10,
+			"eleven" => 11,
+			"twelve" => 12,
+			"thirteen" => 13,
+			"fourteen" => 14,
+			"fifteen" => 15,
+			"sixteen" => 16,
+			"seventeen" => 17,
+			"eighteen" => 18,
+			"nineteen" => 19,
+			"twenty" => 20,
+			"thirty" => 30,
+			"forty" => 40,
+			"fifty" => 50,
+			"sixty" => 60,
+			"seventy" => 70,
+			"eighty" => 80,
+			"ninety" => 90
+		);
+		
+		private $placemap = array (
+			"trillion" => 1000000000000,
+			"billion" => 1000000000,
+			"million" => 1000000,
+			"thousand" => 1000,
+			"hundred" => 100
+		);
+		
+		private function cleanNumString ($input) //Remove extra characters
+		{
+			return strtolower(preg_replace('/\s{2,}/', ' ', preg_replace('/\,|\-|\band\b/', ' ', $input)));		
+		}
+		
+		public function parseNumString ($input) //Parse numeric string
+		{
+			$numstring = $this->cleanNumString($input);
+			$words = explode(" ", $numstring);
+			$count = count($words) - 1;
+			$num = 0;
+			$multiplier = 1;
+			for($i = $count; $i >= 0; $i--) {
+				if (isset($this->placemap[$words[$i]]))
+					if ($this->placemap[$words[$i]] > $multiplier)
+						$multiplier = $this->placemap[$words[$i]];
+					else
+						$multiplier = $multiplier * $this->placemap[$words[$i]];
+				elseif (isset($this->nummap[$words[$i]]))
+					$num += $this->nummap[$words[$i]] * $multiplier;
+				else
+					return "String is not a valid number.";
+			}
+			return number_format($num);
+		}
+	}
+	
+	$input = "Two million, one hundred and twenty-five thousand, one hundred and fifty-five";
+	echo $input."<br />\n";
+	
+	$num = new NumToString();
+	echo $num->parseNumString($input);
+	
+?>
