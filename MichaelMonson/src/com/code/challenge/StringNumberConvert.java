@@ -1,5 +1,6 @@
 package com.code.challenge;
 
+import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -40,10 +41,23 @@ public class StringNumberConvert {
 		NUMBERS.put("MILLION", 1000000);
 		NUMBERS.put("BILLION", 1000000000);
 		
-		//Convert to BigDecimal to support large numbers:
-//		NUMBERS.put("TRILLION",1000000000000);
-//		NUMBERS.put("QUADRILLION", 1000000000000000);
-//		NUMBERS.put("QUINTILLION", 1000000000000000000);
+//  Convert to BigDecimal to support very large numbers:
+//		NUMBERS.put("TRILLION", 1000000000000);
+//		NUMBERS.put("QUADRILLION",  1000000000000000);
+//		NUMBERS.put("QUINTILLION",  1000000000000000000);
+//		NUMBERS.put("SEXTILLION",   1000000000000000000000);
+//		NUMBERS.put("SEPTILLION",   100000000000000000000000);
+//		NUMBERS.put("OCTILLION",    1000000000000000000000000000);
+//		NUMBERS.put("NONILLION",    1000000000000000000000000000000);
+//		NUMBERS.put("DECILLION",    1000000000000000000000000000000000);
+//		NUMBERS.put("UNDECILLION",  1000000000000000000000000000000000000);
+//		NUMBERS.put("DUODECILLION", 1000000000000000000000000000000000000000);
+//		NUMBERS.put("TREDECILLION", 1000000000000000000000000000000000000000000);
+//		NUMBERS.put("QUATTUORDECILLION", 1000000000000000000000000000000000);
+//		NUMBERS.put("VIGINTILLION", 1000000000000000000000000000000000000000000000000000000000000000);
+//		NUMBERS.put("GOOGOL",       10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000);
+//		NUMBERS.put("CENTILLION",   1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000); //1,000 followed by 100 groups of 3-zero sets.
+		
 	}
 	
 
@@ -71,7 +85,7 @@ public class StringNumberConvert {
 		        }
 
 				//Parse for Tokens, based on delimiters (' ', 'AND', '-', ',')
-		        String[] numberSegments = userInput.split(" AND | |-|,");
+		        String[] numberSegments = userInput.split(" AND | |-|, |,");
 		        
 		        Integer convertedNumber = 0;
 		        Integer placeholder = 0;  //Improve code using placeholder value (append it)
@@ -107,8 +121,9 @@ public class StringNumberConvert {
 		        	}	        		
 		        }	
 
-		        
-		        System.out.println("\n  -> Number:  " + convertedNumber);
+		        //Comma-fy:
+		        String convertedNumberString = addCommas(convertedNumber);		        
+		        System.out.println("\n  -> Number:  " + convertedNumberString);
 		        
 		        //TESTING CALLS:
 		        	//outputDeliminations(numberSegments);
@@ -137,6 +152,16 @@ public class StringNumberConvert {
 	
 	
 	/*
+	 *  Convert number into a String representation with standard 3-digit comma separation.
+	 *    -> Eventually convert to use BigDecimal
+	 */
+	private static String addCommas(Integer number) {
+	    DecimalFormat df = new DecimalFormat("#,##0");
+	    return df.format(number);
+	}
+	
+	
+	/*
 	 *  Create a single shared Scanner for keyboard input
 	 */
     private static Scanner scanner = new Scanner( System.in );
@@ -155,7 +180,8 @@ public class StringNumberConvert {
 	}
 	
 	/**
-	 * TESTING:  This simple method can be called to kick out a list of the numerical words in the user input
+	 * TESTING:  This simple method can be called to kick out a list 
+	 *           of the numerical words in the user input.
 	 * 
 	 * @param textData
 	 * @return
@@ -165,5 +191,6 @@ public class StringNumberConvert {
         	System.out.println("|" + numberSegment + "|");	
         }		
 	}
+	
 
 }
